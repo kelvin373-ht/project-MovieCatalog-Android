@@ -2,7 +2,6 @@ plugins {
     id("com.android.application")
     kotlin("android")
     kotlin("android.extensions")
-    kotlin("kapt")
 }
 
 android {
@@ -30,6 +29,8 @@ dependencies {
     implementation(Dependencies.SupportLibrary.appCompat)
     implementation(Dependencies.SupportLibrary.constraintLayout)
     implementation(Dependencies.SupportLibrary.coreKtx)
+
+    implementation(project(Dependencies.Modules.moduleUtils))
 
     testImplementation(Dependencies.TestingLibrary.testJunit)
     androidTestImplementation(Dependencies.TestingLibrary.androidTestRunner)
