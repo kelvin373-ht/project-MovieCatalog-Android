@@ -12,6 +12,7 @@ android {
         targetSdkVersion(Dependencies.Android.targetSdkVersion)
         versionCode = Dependencies.Android.versionCode
         versionName = Dependencies.Android.versionName
+        vectorDrawables.useSupportLibrary = true
         testInstrumentationRunner = Dependencies.Android.testInstrumentationRunner
     }
     buildTypes {
@@ -29,6 +30,7 @@ dependencies {
     implementation(Dependencies.SupportLibrary.appCompat)
     implementation(Dependencies.SupportLibrary.constraintLayout)
     implementation(Dependencies.SupportLibrary.coreKtx)
+    implementation(Dependencies.Design.material)
 
     implementation(project(Dependencies.Modules.moduleUtils))
 
