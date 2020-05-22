@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="font_family_condensed" translatable="false">sans-serif-condensed</string>
+    <string name="font_family_roboto_mono" translatable="false">roboto_mono</string>
+    <string name="fontFamily__roboto_regular" translatable="false">sans-serif</string>
+    <string name="fontFamily__roboto_light" translatable="false">sans-serif-light</string>
+</resources>
