@@ -1,5 +1,5 @@
 plugins {
-    id("com.android.application")
+    id("com.android.library")
     kotlin("android")
     kotlin("android.extensions")
     kotlin("kapt")
@@ -8,7 +8,6 @@ plugins {
 android {
     compileSdkVersion(Dependencies.Android.compileSdkVersion)
     defaultConfig {
-        applicationId = Dependencies.Android.applicationId
         minSdkVersion(Dependencies.Android.minSdkVersion)
         targetSdkVersion(Dependencies.Android.targetSdkVersion)
         versionCode = Dependencies.Android.versionCode
@@ -24,14 +23,4 @@ android {
 }
 
 dependencies {
-    implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
-    implementation(Dependencies.Kotlin.kotlin_std)
-
-    implementation(Dependencies.SupportLibrary.appCompat)
-    implementation(Dependencies.SupportLibrary.constraintLayout)
-    implementation(Dependencies.SupportLibrary.coreKtx)
-
-    testImplementation(Dependencies.TestingLibrary.testJunit)
-    androidTestImplementation(Dependencies.TestingLibrary.androidTestRunner)
-    androidTestImplementation(Dependencies.TestingLibrary.androidTestEspresso)
 }
