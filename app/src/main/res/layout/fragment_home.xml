@@ -36,6 +36,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <SearchView
+            android:id="@+id/searchViewMovieTV"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_marginStart="8dp"
@@ -46,6 +47,35 @@
             app:layout_constraintEnd_toStartOf="@+id/imgNotifications"
             app:layout_constraintStart_toEndOf="@+id/imgMovieApps"
             app:layout_constraintTop_toTopOf="@+id/imgMovieApps" />
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabs_layout_main"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="@+id/imgNotifications"
+            app:layout_constraintStart_toStartOf="@+id/imgMovieApps"
+            app:layout_constraintTop_toBottomOf="@+id/searchViewMovieTV"
+            app:tabBackground="@color/chip_tabs_selector"
+            app:tabIndicatorColor="@android:color/transparent"
+            app:tabIndicatorGravity="center"
+            app:tabIndicatorHeight="30dp"
+            app:tabPaddingStart="8dp"
+            app:tabPaddingEnd="8dp"
+            app:tabSelectedTextColor="?android:textColorPrimary"
+            app:tabTextColor="@color/black_color">
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/movie" />
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tv_show" />
+
+        </com.google.android.material.tabs.TabLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
