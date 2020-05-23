@@ -27,4 +27,5 @@ dependencies {
     implementation(Dependencies.Kotlin.kotlin_std)
 
     implementation(Dependencies.SupportLibrary.appCompat)
+    implementation(Dependencies.Design.material)
 }
