@@ -36,6 +36,7 @@ object Dependencies {
     }
     object Design {
         const val material = "com.google.android.material:material:$materialVersion"
+        const val recyclerview = "androidx.recyclerview:recyclerview:$materialVersion"
     }
     object TestingLibrary {
         const val testJunit = "junit:junit:$junitVersion"

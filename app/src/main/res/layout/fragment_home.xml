@@ -77,6 +77,56 @@
 
         </com.google.android.material.tabs.TabLayout>
 
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/tabs_layout_main"
+            app:layout_constraintStart_toStartOf="@+id/tabs_layout_main"
+            app:layout_constraintTop_toBottomOf="@+id/tabs_layout_main">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/title_movie_popular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/popular"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="@color/white_color"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/view_all_movie_popular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/view_all"
+                    android:textColor="@color/white_color"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/title_movie_popular"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/title_movie_popular" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_movie_popular"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="16dp"
+                    android:orientation="horizontal"
+                    tools:listitem="@layout/item_movie_tv_type_one"
+                    app:layout_constraintStart_toStartOf="@+id/title_movie_popular"
+                    app:layout_constraintTop_toBottomOf="@+id/title_movie_popular" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </ScrollView>
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </FrameLayout>
