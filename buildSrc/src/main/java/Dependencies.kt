@@ -5,6 +5,7 @@ private const val appcompatVersion = "1.0.2"
 private const val coreKtxVersion = "1.0.2"
 private const val constraintLayoutVersion = "1.1.3"
 private const val materialVersion = "1.1.0"
+private const val legacyVersion = "1.0.0"
 
 private const val junitVersion = "4.12"
 private const val runnerVersion = "1.2.0"
@@ -31,6 +32,7 @@ object Dependencies {
         const val appCompat = "androidx.appcompat:appcompat:$appcompatVersion"
         const val coreKtx = "androidx.core:core-ktx:$coreKtxVersion"
         const val constraintLayout = "androidx.constraintlayout:constraintlayout:$constraintLayoutVersion"
+        const val legacy = "androidx.legacy:legacy-support-v4:$legacyVersion"
     }
     object Design {
         const val material = "com.google.android.material:material:$materialVersion"
