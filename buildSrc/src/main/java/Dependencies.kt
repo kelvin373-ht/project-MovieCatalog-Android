@@ -6,6 +6,7 @@ private const val coreKtxVersion = "1.0.2"
 private const val constraintLayoutVersion = "1.1.3"
 private const val materialVersion = "1.1.0"
 private const val legacyVersion = "1.0.0"
+private const val glideVersion = "4.9.0"
 
 private const val junitVersion = "4.12"
 private const val runnerVersion = "1.2.0"
@@ -37,6 +38,7 @@ object Dependencies {
     object Design {
         const val material = "com.google.android.material:material:$materialVersion"
         const val recyclerview = "androidx.recyclerview:recyclerview:$materialVersion"
+        const val glide = "com.github.bumptech.glide:glide:$glideVersion"
     }
     object TestingLibrary {
         const val testJunit = "junit:junit:$junitVersion"

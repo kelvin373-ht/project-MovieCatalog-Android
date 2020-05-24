@@ -7,17 +7,17 @@
     android:layout_marginEnd="8dp"
     android:layout_marginRight="8dp"
     android:layout_gravity="center"
-    android:layout_width="158dp"
-    android:layout_height="300dp">
+    android:layout_width="108dp"
+    android:layout_height="200dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/image_item_movie"
             android:layout_width="match_parent"
-            android:layout_height="250dp"
+            android:layout_height="150dp"
             android:src="@drawable/sample_poster_movie"
             android:adjustViewBounds="true"
             app:layout_constraintEnd_toEndOf="parent"
@@ -32,12 +32,13 @@
             android:layout_marginStart="4dp"
             android:layout_marginEnd="4dp"
             android:layout_marginTop="4dp"
-            android:textSize="12sp"
+            android:textSize="10sp"
             android:textColor="@color/black_color"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView"
-            tools:text="Avenger End Game"/>
+            app:layout_constraintTop_toBottomOf="@+id/image_item_movie"
+            tools:text="Avenger End Game"
+            tools:ignore="SmallSp" />
 
         <ImageView
             android:id="@+id/img_icon_rating"
@@ -50,6 +51,7 @@
             app:srcCompat="@drawable/ic_star" />
 
         <TextView
+            android:id="@+id/rating_item_movie"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/rating"
