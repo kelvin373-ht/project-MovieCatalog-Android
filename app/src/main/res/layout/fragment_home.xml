@@ -82,8 +82,8 @@
             android:layout_height="0dp"
             android:layout_marginTop="16dp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="@+id/tabs_layout_main"
-            app:layout_constraintStart_toStartOf="@+id/tabs_layout_main"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tabs_layout_main">
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -91,15 +91,54 @@
                 android:layout_height="match_parent">
 
                 <TextView
+                    android:id="@+id/title_movie_top_rated"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/top_rated"
+                    android:textColor="@color/white_color"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginStart="8dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/view_all_movie_top_rated"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/view_all"
+                    android:textColor="@color/white_color"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/title_movie_top_rated"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/title_movie_top_rated" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_movie_top_rated"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/title_movie_top_rated" />
+
+                <TextView
                     android:id="@+id/title_movie_popular"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
                     android:text="@string/popular"
-                    android:textStyle="bold"
-                    android:textSize="16sp"
                     android:textColor="@color/white_color"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toBottomOf="@+id/rv_movie_top_rated" />
 
                 <TextView
                     android:id="@+id/view_all_movie_popular"
@@ -109,17 +148,55 @@
                     android:textColor="@color/white_color"
                     android:textSize="12sp"
                     android:textStyle="bold"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
                     app:layout_constraintBottom_toBottomOf="@+id/title_movie_popular"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="@+id/title_movie_popular" />
 
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/rv_movie_popular"
-                    android:layout_width="match_parent"
+                    android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_marginTop="16dp"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintEnd_toEndOf="@+id/view_all_movie_popular"
                     app:layout_constraintStart_toStartOf="@+id/title_movie_popular"
                     app:layout_constraintTop_toBottomOf="@+id/title_movie_popular" />
+
+                <TextView
+                    android:id="@+id/title_movie_now_playing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/now_playing"
+                    android:textColor="@color/white_color"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintStart_toStartOf="@+id/rv_movie_popular"
+                    app:layout_constraintTop_toBottomOf="@+id/rv_movie_popular" />
+
+                <TextView
+                    android:id="@+id/view_all_movie_now_playing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="@string/view_all"
+                    android:textColor="@color/white_color"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/title_movie_now_playing"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/title_movie_now_playing"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_movie_now_playing"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintEnd_toEndOf="@+id/view_all_movie_now_playing"
+                    app:layout_constraintStart_toStartOf="@+id/title_movie_now_playing"
+                    app:layout_constraintTop_toBottomOf="@+id/title_movie_now_playing" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 

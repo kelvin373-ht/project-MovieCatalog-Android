@@ -9,4 +9,6 @@
     <string name="popular">Popular</string>
     <string name="view_all">View All</string>
     <string name="rating">%s/10</string>
+    <string name="top_rated">Top Rated</string>
+    <string name="now_playing">Now Playing</string>
 </resources>
