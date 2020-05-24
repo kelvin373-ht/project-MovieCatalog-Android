@@ -26,6 +26,7 @@ dependencies {
     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
     implementation(Dependencies.Kotlin.kotlin_std)
 
+    implementation(Dependencies.Design.recyclerview)
     implementation(Dependencies.SupportLibrary.appCompat)
     implementation(Dependencies.Design.material)
 }

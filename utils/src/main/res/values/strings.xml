@@ -6,4 +6,7 @@
     <string name="profile">Profile</string>
     <string name="tv_show">TV Show</string>
     <string name="movie">Movie</string>
+    <string name="popular">Popular</string>
+    <string name="view_all">View All</string>
+    <string name="rating">%s/10</string>
 </resources>

@@ -31,6 +31,7 @@ dependencies {
     implementation(Dependencies.SupportLibrary.constraintLayout)
     implementation(Dependencies.SupportLibrary.coreKtx)
     implementation(Dependencies.Design.material)
+    implementation(Dependencies.Design.glide)
 
     implementation(project(Dependencies.Modules.moduleUtils))
 
