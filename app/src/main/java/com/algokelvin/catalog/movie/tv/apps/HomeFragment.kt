@@ -38,7 +38,7 @@ class HomeFragment : Fragment() {
             setAdapter()
         }
 
-        rv_movie_now_playing.setupAdapterData(R.layout.item_movie_tv_type_one, requireContext(), MovieDummy.typeOne()) {
+        rv_movie_now_playing.setupAdapterData(R.layout.item_movie_tv_type_three, requireContext(), MovieDummy.typeOne()) {
             data {
                 Glide.with(requireContext()).load(item?.image).into(viewAdapterData.image_item_movie)
                 viewAdapterData.title_item_movie.text = item?.title
