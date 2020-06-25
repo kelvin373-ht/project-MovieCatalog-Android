@@ -17,10 +17,15 @@ android {
     buildTypes {
         getByName("release") {
             isMinifyEnabled = false
+            buildConfigField("String", "URL_MOVIE_TV", "\"https://api.themoviedb.org/\"")
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
         }
     }
 }
 
 dependencies {
+    implementation(Dependencies.Retrofit.retrofit)
+    implementation(Dependencies.Retrofit.retrofitGson)
+    implementation(Dependencies.Retrofit.retrofitRxJava)
+    implementation(Dependencies.Retrofit.okHttpLogging)
 }

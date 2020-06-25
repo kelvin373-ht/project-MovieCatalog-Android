@@ -6,6 +6,9 @@ private const val coreKtxVersion = "1.0.2"
 private const val constraintLayoutVersion = "1.1.3"
 private const val materialVersion = "1.1.0"
 private const val glideVersion = "4.9.0"
+private const val retrofitVersion = "2.6.0"
+private const val retrofitGsonRxJavaVersion = "2.5.0"
+private const val okHttpVersion = "4.0.1"
 
 private const val junitVersion = "4.12"
 private const val runnerVersion = "1.2.0"
@@ -42,6 +45,12 @@ object Dependencies {
         const val testJunit = "junit:junit:$junitVersion"
         const val androidTestRunner = "androidx.test:runner:$runnerVersion"
         const val androidTestEspresso = "androidx.test.espresso:espresso-core:$espressoVersion"
+    }
+    object Retrofit {
+        const val retrofit = "com.squareup.retrofit2:retrofit:$retrofitVersion"
+        const val retrofitGson = "com.squareup.retrofit2:converter-gson:$retrofitGsonRxJavaVersion"
+        const val retrofitRxJava = "com.squareup.retrofit2:adapter-rxjava2:$retrofitGsonRxJavaVersion"
+        const val okHttpLogging = "com.squareup.okhttp3:logging-interceptor:$okHttpVersion"
     }
     object Modules {
         const val moduleUtils = ":utils"
