@@ -9,6 +9,7 @@ private const val glideVersion = "4.9.0"
 private const val retrofitVersion = "2.6.0"
 private const val retrofitGsonRxJavaVersion = "2.5.0"
 private const val okHttpVersion = "4.0.1"
+private const val lifecycleVersion = "2.2.0"
 
 private const val junitVersion = "4.12"
 private const val runnerVersion = "1.2.0"
@@ -52,7 +53,11 @@ object Dependencies {
         const val retrofitRxJava = "com.squareup.retrofit2:adapter-rxjava2:$retrofitGsonRxJavaVersion"
         const val okHttpLogging = "com.squareup.okhttp3:logging-interceptor:$okHttpVersion"
     }
+    object Lifecycle {
+        const val lifecycle = "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycleVersion"
+    }
     object Modules {
         const val moduleUtils = ":utils"
+        const val moduleRepository = ":repository"
     }
 }
