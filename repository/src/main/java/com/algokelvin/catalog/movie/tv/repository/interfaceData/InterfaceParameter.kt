@@ -1,4 +1,4 @@
-package com.algokelvin.catalog.movie.tv.repository.`interface`
+package com.algokelvin.catalog.movie.tv.repository.interfaceData
 
 interface MovieTVParameter {
     val api: String

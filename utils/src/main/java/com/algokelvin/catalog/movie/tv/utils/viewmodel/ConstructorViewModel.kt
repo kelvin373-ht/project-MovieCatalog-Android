@@ -2,7 +2,7 @@ package com.algokelvin.catalog.movie.tv.utils.viewmodel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.algokelvin.catalog.movie.tv.repository.`interface`.MovieTVParameter
+import com.algokelvin.catalog.movie.tv.repository.interfaceData.MovieTVParameter
 
 @Suppress("UNCHECKED_CAST")
 class MovieTVVMFactory(
