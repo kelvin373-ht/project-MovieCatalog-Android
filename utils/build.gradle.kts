@@ -15,6 +15,7 @@ android {
         testInstrumentationRunner = Dependencies.Android.testInstrumentationRunner
 
         buildConfigField("String", "API_MOVIE_TV", "\"5a9914ea9eb3bfc1addfe13b0b92b0b4\"")
+        buildConfigField("String", "URL_POSTER", "\"https://image.tmdb.org/t/p/w780\"")
     }
     buildTypes {
         getByName("release") {
