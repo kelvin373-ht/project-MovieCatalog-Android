@@ -13,6 +13,8 @@ android {
         versionCode = Dependencies.Android.versionCode
         versionName = Dependencies.Android.versionName
         testInstrumentationRunner = Dependencies.Android.testInstrumentationRunner
+
+        buildConfigField("String", "URL_MOVIE_TV", "\"https://api.themoviedb.org/\"")
     }
     buildTypes {
         getByName("release") {
@@ -23,4 +25,9 @@ android {
 }
 
 dependencies {
+    implementation(Dependencies.Retrofit.retrofit)
+    implementation(Dependencies.Retrofit.retrofitGson)
+    implementation(Dependencies.Retrofit.retrofitRxJava)
+    implementation(Dependencies.Retrofit.okHttpLogging)
+    implementation(Dependencies.Lifecycle.lifecycle)
 }
