@@ -32,8 +32,10 @@ dependencies {
     implementation(Dependencies.SupportLibrary.coreKtx)
     implementation(Dependencies.Design.material)
     implementation(Dependencies.Design.glide)
+    implementation("androidx.lifecycle:lifecycle-extensions:2.1.0")
 
     implementation(project(Dependencies.Modules.moduleUtils))
+    implementation(project(Dependencies.Modules.moduleRepository))
 
     testImplementation(Dependencies.TestingLibrary.testJunit)
     androidTestImplementation(Dependencies.TestingLibrary.androidTestRunner)
