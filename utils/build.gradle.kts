@@ -1,19 +1,21 @@
 plugins {
-    id("com.android.application")
+    id("com.android.library")
     kotlin("android")
     kotlin("android.extensions")
+    kotlin("kapt")
 }
 
 android {
     compileSdkVersion(Dependencies.Android.compileSdkVersion)
     defaultConfig {
-        applicationId = Dependencies.Android.applicationId
         minSdkVersion(Dependencies.Android.minSdkVersion)
         targetSdkVersion(Dependencies.Android.targetSdkVersion)
         versionCode = Dependencies.Android.versionCode
         versionName = Dependencies.Android.versionName
-        vectorDrawables.useSupportLibrary = true
         testInstrumentationRunner = Dependencies.Android.testInstrumentationRunner
+
+        buildConfigField("String", "API_MOVIE_TV", "\"5a9914ea9eb3bfc1addfe13b0b92b0b4\"")
+        buildConfigField("String", "URL_POSTER", "\"https://image.tmdb.org/t/p/w780\"")
     }
     buildTypes {
         getByName("release") {
@@ -27,17 +29,9 @@ dependencies {
     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
     implementation(Dependencies.Kotlin.kotlin_std)
 
+    implementation(Dependencies.Design.recyclerview)
     implementation(Dependencies.SupportLibrary.appCompat)
-    implementation(Dependencies.SupportLibrary.constraintLayout)
-    implementation(Dependencies.SupportLibrary.coreKtx)
     implementation(Dependencies.Design.material)
-    implementation(Dependencies.Design.glide)
-    implementation("androidx.lifecycle:lifecycle-extensions:2.1.0")
 
-    implementation(project(Dependencies.Modules.moduleUtils))
     implementation(project(Dependencies.Modules.moduleRepository))
-
-    testImplementation(Dependencies.TestingLibrary.testJunit)
-    androidTestImplementation(Dependencies.TestingLibrary.androidTestRunner)
-    androidTestImplementation(Dependencies.TestingLibrary.androidTestEspresso)
 }
