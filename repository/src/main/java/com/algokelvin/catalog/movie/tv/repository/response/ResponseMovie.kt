@@ -3,7 +3,7 @@ package com.algokelvin.catalog.movie.tv.repository.response
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import com.algokelvin.catalog.movie.tv.repository.BuildConfig
-import com.algokelvin.catalog.movie.tv.repository.`interface`.MovieTVParameter
+import com.algokelvin.catalog.movie.tv.repository.interfaceData.MovieTVParameter
 import com.algokelvin.catalog.movie.tv.repository.api.ApiInstanceMovieTV
 import com.algokelvin.catalog.movie.tv.repository.data.DataMovie
 import retrofit2.Call
