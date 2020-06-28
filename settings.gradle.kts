@@ -1,2 +1,2 @@
-include (":app",":buildSrc",":utils",":repository")
+include (":buildSrc",":utils",":repository")
 rootProject.name="MovieTVApps"
